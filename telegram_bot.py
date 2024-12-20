@@ -20,7 +20,7 @@ async def respond(update: Update, context):
 
 def main():
 
-    BOT_TOKEN = "7932054894:AAGg5MOguOhWxOTfBJolhYg9IlH-0G9jIjg"
+    BOT_TOKEN = "---------------------------------------------"
     application = Application.builder().token(BOT_TOKEN).build()
     message_handler = MessageHandler(filters.TEXT & ~filters.COMMAND, respond)
     application.add_handler(message_handler)
